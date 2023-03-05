@@ -7,32 +7,55 @@
   <title> <%= htmlWebpackPlugin.options.title %> </title>
 </head>
 <body>
-  
-  <div class="template-wrapper">
 
-    <img width="512px" height="512px" src="<%= require('../assets/work-in-progress.png') %>" alt="" class="template-image">
-    <h1 class="template-title">Basic webpack template</h1>
-    <div class="template-description">
-      <p class="template-text">
-        This is a basic web template meant to ease creation of new projects
-        that require webpack, in the form i find myself generating most of 
-        the times.
-      </p>
-      <p class="template-text">
-        Once cloned the needed libraries should easily be set by use of the
-        command.
-        <code>npm install</code>
-        That will generate the node modules required. To easily test out if
-        the template is functioning the 'build' command specified in the
-        <em>'package.json'</em> file can be run using the command.
-        <code>npm run build</code>
-      </p>
-      <p class="template-text">
-        <a class="cta" href="https://www.flaticon.com/free-icons/work-in-progress" title="work in progress icons">Work in progress icons created by Freepik - Flaticon</a>
-      </p>
-    </div>
+  <main class="page-content">
 
-  </div>
+    <section class="section section-1" id="section-1">
+      <div class="section-wrapper">
+
+        <div class="dummy-content">
+          <h1 class="dummy-title">Dummy Section 01</h1>
+          <p class="dummy-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quasi ab quas ratione perspiciatis voluptates quos explicabo optio inventore suscipit. Fuga perferendis quidem ex veritatis fugit eligendi quis alias consequuntur hic quas ab obcaecati ea, eius, laudantium cumque reiciendis. Tempore maiores officia a veniam consectetur.</p>
+          <p class="dummy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam optio, dicta debitis possimus odio, minima adipisci natus consectetur nobis unde repellendus cum labore soluta nihil facere provident voluptates totam. Blanditiis eligendi soluta ipsa?</p>
+          <p class="dummy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, labore suscipit corporis, eveniet doloremque neque asperiores autem voluptatibus reiciendis necessitatibus consectetur animi porro!</p>
+          <p class="dummy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deserunt doloribus repellendus possimus doloremque sint autem modi et deleniti dicta soluta, veniam quibusdam delectus corporis, blanditiis quo adipisci distinctio excepturi dolores ex ut quaerat vel tempore dolor. Illum, est.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-2" id="section-2">
+      <div class="section-wrapper">
+
+        <img width="512px" height="512px" src="<%= require('../assets/work-in-progress.png') %>" alt="" class="test-image">
+
+        <div class="test-content">
+
+          <h2 class="test-title">Faux Parallax</h2>
+
+          <h3 class="test-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corporis necessitatibus quo odio quos vel veritatis dolorum eaque debitis maxime, animi ad repudiandae ullam incidunt dolor in, impedit magnam nesciunt neque repellat. Perspiciatis reprehenderit facilis hic officiis officia esse ab deserunt dolor incidunt porro blanditiis tenetur, numquam nihil accusantium odio, voluptatibus ducimus quidem magnam deleniti.</h3>
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="section section-3" id="section-3">
+      <div class="section-wrapper">
+
+        <div class="dummy-content">
+          <h1 class="dummy-title">Dummy Section 03</h1>
+          <p class="dummy-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quasi ab quas ratione perspiciatis voluptates quos explicabo optio inventore suscipit. Fuga perferendis quidem ex veritatis fugit eligendi quis alias consequuntur hic quas ab obcaecati ea, eius, laudantium cumque reiciendis. Tempore maiores officia a veniam consectetur.</p>
+          <p class="dummy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam optio, dicta debitis possimus odio, minima adipisci natus consectetur nobis unde repellendus cum labore soluta nihil facere provident voluptates totam. Blanditiis eligendi soluta ipsa?</p>
+          <p class="dummy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, labore suscipit corporis, eveniet doloremque neque asperiores autem voluptatibus reiciendis necessitatibus consectetur animi porro!</p>
+          <p class="dummy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deserunt doloribus repellendus possimus doloremque sint autem modi et deleniti dicta soluta, veniam quibusdam delectus corporis, blanditiis quo adipisci distinctio excepturi dolores ex ut quaerat vel tempore dolor. Illum, est.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
 </body>
 </html>

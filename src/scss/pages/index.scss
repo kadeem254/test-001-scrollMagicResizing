@@ -1,64 +1,127 @@
 @use "../clearfix";
 @use "../variables";
 
-body{
+body {
   background-color: variables.$antiflash-white;
   color: variables.$space-cadet;
-}
-.template-wrapper{
-  padding: 2rem;
 
+  font-size: 20px;
+}
+
+.page-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  section {
+
+    &:nth-child(even) {
+      background-color: variables.$space-cadet;
+      color: variables.$antiflash-white;
+    }
+
+    .section-wrapper{
+      height: 100%;
+
+      width: calc( 100% - 6rem );
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      max-width: 1980px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.dummy-content{
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-
-  .template-image{
-    width: 75%;
-    max-width: 300px;
-    min-width: 200px;
-    height: auto;
-  }
-  .template-title{
-    text-transform: capitalize;
-    font-weight: 400;
+  
+  .dummy-title{
+    font-size: 2em;
+    text-align: center;
   }
 
-  .template-description{
-    width: 50%;
-    max-width: 512px;
-    min-width: 250px;
+  .dummy-text{
+    text-align: justify;
 
+    &::first-letter{
+      font-size: 1.5em;
+      font-weight: 200;
+    }
+  }
+}
+
+.section-2{
+  .section-wrapper{
     display: flex;
     flex-direction: column;
-    gap: .75rem;
+    align-items: center;
+    gap: 1rem;
 
-    .template-text{
-      text-align: justify;
+    .test-image{
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+    }
 
-      &::first-letter{
-        font-size: 1.2em;
-        font-weight: 600;
+    .test-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .test-title{
+        font-size: 2em;
+        text-align: center;
+        color: variables.$cool-gray;
+        font-size: 200;
       }
 
-      code{
-        padding: .1rem .25rem;
-        display: inline-block;
-        background-color: variables.$cool-gray;
-        color: variables.$antiflash-white;
+      .test-text{
+        max-width: 480px;
+        text-align: center;
       }
+    }
+  }
+}
 
-      .cta{
-        width: fit-content;
-        padding: .25rem 1rem;
+
+@media screen and ( min-width: 678px ) {
+  .dummy-content{
+    align-items: center;
+    .dummy-text{
+      max-width: 700px;
+      $gap-size: 5rem;
+      &:nth-child( odd ){
+      }
+      &:nth-child( even ){
+      }
+    }
+  }
+
+  section.section-2{
+    height: 100vh;
+    height: 100svh;
+    .section-wrapper{
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat( 2, 1fr );
+      overflow: hidden;
+
+      .test-image{
+        max-width: 320px;
         margin: 0 auto;
+      }
 
-        display: block;
+      .test-content{
+        
+        gap: 1rem;
+        align-items: flex-start;
+        justify-content: center;
 
-        border-radius: 1rem;
-        background-color: variables.$space-cadet;
-        color: variables.$antiflash-white;
+        .test-text{
+          text-align: left;
+        }
       }
     }
   }
